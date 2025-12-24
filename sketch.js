@@ -1204,7 +1204,7 @@ function mousePressed() {
         mouseX < titleX + titleWidth/2 && 
         mouseY > TITLE_Y && 
         mouseY < TITLE_Y + TITLE_SIZE) {
-        window.open('https://r-van-kessel.github.io/Summon_the_Dragon/index.html', '_blank');
+        window.open('https://r-van-kessel.github.io/Summon_the_Dragon/index.html', '_self');
     }
     
     if (document.getElementById('infoPopup')) return false;
