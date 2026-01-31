@@ -1587,20 +1587,7 @@ function drawBlock(block) {
         return;
     }
 
-    // Teken tabellijnen voor verhoudingstabellen
-    if (block.isRatioTable) {
-        stroke(255);
-        strokeWeight(2);
-        
-        // Horizontale lijn (tussen de twee rijen)
-        let midY = block.y + CELL_SIZE / 2;
-        line(block.x + 15, midY, block.x + CELL_SIZE - 15, midY);
-        
-        // Verticale lijn (tussen de twee kolommen)
-        let midX = block.x + CELL_SIZE / 2;
-        line(midX, block.y + 15, midX, block.y + CELL_SIZE - 15);
-    }
- 
+   
     // Teken tekst (alleen voor antwoordblokken)
     fill(47,79,79);  //kleur tekst antwoordblok
     noStroke();
